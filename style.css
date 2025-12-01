@@ -1,0 +1,152 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* Struk Styles - ESTETIK & MODERN */
+.struk {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.struk-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.struk-logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.struk-address, .struk-phone {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.struk-divider {
+    border: 0;
+    border-top: 1px dashed #ccc;
+    margin: 15px 0;
+}
+
+.struk-body {
+    margin-bottom: 20px;
+}
+
+.struk-info-row, .struk-total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.struk-info-row span:first-child, .struk-total-row span:first-child {
+    color: #555;
+}
+
+.struk-items {
+    margin: 20px 0;
+}
+
+.struk-items-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.struk-item-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.struk-item-name {
+    flex: 2;
+    padding-right: 10px;
+}
+
+.struk-item-qty, .struk-item-price {
+    flex: 1;
+    text-align: center;
+}
+
+.struk-item-subtotal {
+    flex: 1;
+    text-align: right;
+    font-weight: 500;
+}
+
+.struk-total {
+    padding-top: 10px;
+}
+
+.struk-total-row.grand-total {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #333;
+}
+
+.struk-footer {
+    text-align: center;
+    font-size: 11px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.struk-footer-message {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.struk-footer-note {
+    font-style: italic;
+}
+
+/* Modal Form Styles */
+#modal-form {
+    transition: opacity 0.25s ease-in-out;
+}
+
+#modal-form .bg-white {
+    transform: scale(0.9);
+    transition: transform 0.25s ease-in-out;
+}
+
+#modal-form:not(.hidden) .bg-white {
+    transform: scale(1);
+}
+
+/* Style untuk Kembalian di Halaman Kasir */
+#display-kembalian {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f0fdf4; /* Light green background */
+    border: 1px solid #bbf7d0; /* Green border */
+}
+
+#nilai-kembalian.text-red-600 {
+    background-color: #fef2f2; /* Light red background */
+    border-color: #fecaca; /* Red border */
+}
